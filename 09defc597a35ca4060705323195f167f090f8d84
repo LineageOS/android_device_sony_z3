@@ -33,6 +33,24 @@
       "revId": "09defc597a35ca4060705323195f167f090f8d84",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa7ab95a_ebaa0185",
+        "filename": "audio/audio_platform_info.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-17T17:58:26Z",
+      "side": 1,
+      "message": "Looks like the standard use cases (handset, speaker, handset-mic, etc) all use standard ACDB IDs. objdump .data region and look at 0x35180 for output device table 0x353a0 for input device table.",
+      "parentUuid": "fa7ab95a_4bcbed72",
+      "revId": "09defc597a35ca4060705323195f167f090f8d84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
