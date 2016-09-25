@@ -35,3 +35,17 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/sony/z3/sepolicy
+
+#force old  libutils symbols
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+#thanks to tomascus
+
+USE_LEGACY_BLOBS := true
+  #will become USE_LEGACY_BLOBS in cm-14.0
+  #see https://review.cyanogenmod.org/#/c/158551/
+  # thanks to forkbomb
+
+#Camera
+TARGET_PROVIDES_CAMERA_HAL := true
+TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+BOARD_CAMERA_HAVE_ISO := true
