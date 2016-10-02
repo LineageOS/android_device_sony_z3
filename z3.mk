@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/bcmdhd.cal:system/etc/firmware/wlan/bcmdhd/bcmdhd.cal
+   $(LOCAL_PATH)/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
