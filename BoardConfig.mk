@@ -37,9 +37,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 BOARD_SEPOLICY_DIRS += \
     device/sony/z3/sepolicy
 
-#force old  libutils symbols
-COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
-#thanks to tomascus
 
 USE_LEGACY_BLOBS := true
   #will become USE_LEGACY_BLOBS in cm-14.0
