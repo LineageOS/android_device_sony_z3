@@ -25,6 +25,8 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/z3/include
 
 BOARD_HARDWARE_CLASS += device/sony/z3/cmhw
 
+TARGET_BOOTLOADER_BOARD_NAME := D6603
+
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8974
 TARGET_KERNEL_CONFIG := cm_shinano_leo_defconfig
