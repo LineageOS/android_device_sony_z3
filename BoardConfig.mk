@@ -15,9 +15,6 @@
 # inherit from the common shinano definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
-# inherit from the proprietary version
-#-include vendor/sony/z3/BoardConfigVendor.mk
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,D6653,z3,leo
 
