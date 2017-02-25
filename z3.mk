@@ -61,3 +61,6 @@ PRODUCT_COPY_FILES += \
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+
+# Include non-opensource parts		
+$(call inherit-product, vendor/sony/z3/z3-vendor.mk)
