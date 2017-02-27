@@ -26,7 +26,7 @@ TARGET_BOOTLOADER_BOARD_NAME := D6603
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8974
-TARGET_KERNEL_CONFIG := cm_shinano_leo_defconfig
+TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
