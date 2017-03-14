@@ -52,10 +52,7 @@
 			<resource name="zone8" />
 		</resource>
 
-		<!-- TODO: -->
-		<resource name="modem" type="echo" />
-
-		<resource name="shutdown" type="halt" delay="5" />
+		<resource name="shutdown" type="halt" delay="1" />
 	</resources>
 
 	<control name="usb">
@@ -97,27 +94,22 @@
 		<mitigation level="9"><value resource="charger">9</value></mitigation>
 	</control>
 
-	<control name="modem">
-		<mitigation level="off"><value resource="modem">0</value></mitigation>
-		<mitigation level="1"><value resource="modem">1</value></mitigation>
-	</control>
-
 	<control name="shutdown">
 		<mitigation level="off" />
 		<mitigation level="1"><value resource="shutdown" /></mitigation>
 	</control>
 
 	<control name="backlight">
-		<mitigation level="off"><value resource="backlight">255</value></mitigation>
-		<mitigation level="1"><value resource="backlight">209</value></mitigation>
-		<mitigation level="2"><value resource="backlight">171</value></mitigation>
-		<mitigation level="3"><value resource="backlight">141</value></mitigation>
-		<mitigation level="4"><value resource="backlight">115</value></mitigation>
-		<mitigation level="5"><value resource="backlight">95</value></mitigation>
-		<mitigation level="6"><value resource="backlight">78</value></mitigation>
-		<mitigation level="7"><value resource="backlight">64</value></mitigation>
-		<mitigation level="8"><value resource="backlight">52</value></mitigation>
-		<mitigation level="9"><value resource="backlight">43</value></mitigation>
+		<mitigation level="off"><value resource="backlight">4095</value></mitigation>
+		<mitigation level="1"><value resource="backlight">3581</value></mitigation>
+		<mitigation level="2"><value resource="backlight">3082</value></mitigation>
+		<mitigation level="3"><value resource="backlight">2569</value></mitigation>
+		<mitigation level="4"><value resource="backlight">2055</value></mitigation>
+		<mitigation level="5"><value resource="backlight">1718</value></mitigation>
+		<mitigation level="6"><value resource="backlight">1413</value></mitigation>
+		<mitigation level="7"><value resource="backlight">1027</value></mitigation>
+		<mitigation level="8"><value resource="backlight">819</value></mitigation>
+		<mitigation level="9"><value resource="backlight">513</value></mitigation>
 	</control>
 
 	<control name="gpu">
@@ -158,7 +150,7 @@
 		</threshold>
 	</configuration>
 
-	<!-- usb, dc, charging, modem,backlight -->
+	<!-- usb, dc, charging,backlight -->
 	<configuration sensor="temp-emmc">
 		<threshold>
 			<mitigation name="cpu" level="off" />
@@ -167,7 +159,6 @@
 			<mitigation name="dc" level="off" />
 			<mitigation name="backlight" level="off" />
 			<mitigation name="gpu" level="off" />
-			<mitigation name="modem" level="off" />
 		</threshold>
 		<threshold trigger="510" clear="495">
 			<mitigation name="cpu" level="off" />
@@ -176,7 +167,6 @@
 			<mitigation name="dc" level="off" />
 			<mitigation name="backlight" level="1" />
 			<mitigation name="gpu" level="off" />
-			<mitigation name="modem" level="off" />
 		</threshold>
 		<threshold trigger="525" clear="510">
 			<mitigation name="cpu" level="off" />
@@ -185,7 +175,6 @@
 			<mitigation name="dc" level="2" />
 			<mitigation name="backlight" level="2" />
 			<mitigation name="gpu" level="off" />
-			<mitigation name="modem" level="off" />
 		</threshold>
 		<threshold trigger="540" clear="525">
 			<mitigation name="cpu" level="off" />
@@ -194,7 +183,6 @@
 			<mitigation name="dc" level="3" />
 			<mitigation name="backlight" level="3" />
 			<mitigation name="gpu" level="off" />
-			<mitigation name="modem" level="off" />
 		</threshold>
 		<threshold trigger="555" clear="530">
 			<mitigation name="cpu" level="off" />
@@ -203,7 +191,6 @@
 			<mitigation name="dc" level="4" />
 			<mitigation name="backlight" level="4" />
 			<mitigation name="gpu" level="off" />
-			<mitigation name="modem" level="off" />
 		</threshold>
 		<threshold trigger="565" clear="535">
 			<mitigation name="cpu" level="3" />
@@ -212,7 +199,6 @@
 			<mitigation name="dc" level="4" />
 			<mitigation name="backlight" level="5" />
 			<mitigation name="gpu" level="off" />
-			<mitigation name="modem" level="off" />
 		</threshold>
 		<threshold trigger="570" clear="540">
 			<mitigation name="cpu" level="6" />
@@ -221,7 +207,6 @@
 			<mitigation name="dc" level="4" />
 			<mitigation name="backlight" level="6" />
 			<mitigation name="gpu" level="1" />
-			<mitigation name="modem" level="1" />
 		</threshold>
 		<threshold trigger="575" clear="542">
 			<mitigation name="cpu" level="8" />
@@ -230,7 +215,6 @@
 			<mitigation name="dc" level="5" />
 			<mitigation name="backlight" level="7" />
 			<mitigation name="gpu" level="2" />
-			<mitigation name="modem" level="1" />
 		</threshold>
 		<threshold trigger="578" clear="555">
 			<mitigation name="cpu" level="10" />
@@ -239,7 +223,6 @@
 			<mitigation name="dc" level="5" />
 			<mitigation name="backlight" level="8" />
 			<mitigation name="gpu" level="3" />
-			<mitigation name="modem" level="1" />
 		</threshold>
 		<threshold trigger="580" clear="565">
 			<mitigation name="cpu" level="11" />
@@ -248,7 +231,6 @@
 			<mitigation name="dc" level="6" />
 			<mitigation name="backlight" level="9" />
 			<mitigation name="gpu" level="4" />
-			<mitigation name="modem" level="1" />
 		</threshold>
 		<threshold trigger="585" clear="570">
 			<mitigation name="cpu" level="12" />
@@ -257,7 +239,6 @@
 			<mitigation name="dc" level="6" />
 			<mitigation name="backlight" level="9" />
 			<mitigation name="gpu" level="4" />
-			<mitigation name="modem" level="1" />
 		</threshold>
 		<threshold trigger="735" clear="630">
 			<mitigation name="cpu" level="13" />
@@ -266,7 +247,6 @@
 			<mitigation name="dc" level="6" />
 			<mitigation name="backlight" level="9" />
 			<mitigation name="gpu" level="4" />
-			<mitigation name="modem" level="1" />
 		</threshold>
 		<threshold trigger="820" clear="650">
 			<mitigation name="shutdown" level="1" />
@@ -278,8 +258,8 @@
 		<threshold>
 			<mitigation name="charge_en" level="off" />
 		</threshold>
-		<threshold trigger="670" clear="500">
-			<mitigation name="charge_en" level="2" />
+		<threshold trigger="674" clear="600">
+			<mitigation name="charge_en" level="1" />
 		</threshold>
 	</configuration>
 	<configuration sensor="temp-quiet">
