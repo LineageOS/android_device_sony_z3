@@ -12,8 +12,8 @@ depending on (Sony specific):
     LineageOS/android_device_sony_msm8974-common
 
 
-| version | kernel version                        |
-|---------|---------------------------------------|
-| 14.1    | LineageOS/android_kernel_sony_msm8974 |
-| 13      | LineageOS/android_kernel_sony_msm     |
-| 12.1    | LineageOS/android_kernel_sony_msm8974 |
+| Version | Kernel version | Kernel repository                     |
+|---------|----------------|---------------------------------------|
+| 14.1    | 3.4            | LineageOS/android_kernel_sony_msm8974 |
+| 13      | 3.10           | LineageOS/android_kernel_sony_msm     |
+| 12.1    | 3.4            | LineageOS/android_kernel_sony_msm8974 |
