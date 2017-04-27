@@ -47,5 +47,8 @@ TARGET_PROVIDES_CAMERA_HAL := true
 TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 BOARD_CAMERA_HAVE_ISO := true
 
+#Specific device prop
+TARGET_SYSTEM_PROP += device/sony/z3/system.prop
+
 #DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
