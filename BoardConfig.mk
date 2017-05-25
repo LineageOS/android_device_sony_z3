@@ -15,12 +15,14 @@
 # inherit from the common shinano definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
+DEVICE_PATH := device/sony/z3
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,D6653,z3,leo
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/z3/include
+TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
-BOARD_HARDWARE_CLASS += device/sony/z3/cmhw
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 
 TARGET_BOOTLOADER_BOARD_NAME := D6603
 
@@ -34,13 +36,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/sony/z3/sepolicy
-
-
-USE_LEGACY_BLOBS := true
-  #will become USE_LEGACY_BLOBS in cm-14.0
-  #see https://review.cyanogenmod.org/#/c/158551/
-  # thanks to forkbomb
+    $(DEVICE_PATH)/sepolicy
 
 #Camera
 TARGET_PROVIDES_CAMERA_HAL := true
@@ -48,7 +44,7 @@ TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 BOARD_CAMERA_HAVE_ISO := true
 
 #Specific device prop
-TARGET_SYSTEM_PROP += device/sony/z3/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 #DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
