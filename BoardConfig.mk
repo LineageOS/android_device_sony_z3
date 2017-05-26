@@ -12,22 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the common shinano definitions
+# inherit from the shinano-common definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/sony/z3
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,D6653,z3,leo
-
+TARGET_BOOTLOADER_BOARD_NAME := D6603
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
-
 BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 
-TARGET_BOOTLOADER_BOARD_NAME := D6603
-
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/sony/msm8974
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
 # Partition information
@@ -35,16 +31,10 @@ BOARD_VOLD_MAX_PARTITIONS := 25
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-#Camera
-TARGET_PROVIDES_CAMERA_HAL := true
-TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
-BOARD_CAMERA_HAVE_ISO := true
-
-#Specific device prop
+# Device specific prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-#DT2W
+# DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"

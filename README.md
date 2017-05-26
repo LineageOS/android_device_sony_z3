@@ -7,7 +7,6 @@ This is the Android device configuration for Xperia Z3 (Shinano platform).
 depending on (Sony specific):
 -----------------------------
 
-    LineageOS/android_device_sony_common
     LineageOS/android_device_sony_shinano-common
     LineageOS/android_device_sony_msm8974-common
 
