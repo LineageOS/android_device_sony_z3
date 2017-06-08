@@ -38,18 +38,18 @@
          backlight values for LUX levels between these control points.
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>5</item>
-        <item>15</item>
-        <item>50</item>
-        <item>100</item>
-        <item>200</item>
-        <item>400</item>
-        <item>1000</item>
-        <item>2000</item>
-        <item>3000</item>
-        <item>5000</item>
-        <item>10000</item>
-        <item>30000</item>
+        <item>64</item>
+        <item>128</item>
+        <item>170</item>
+        <item>220</item>
+        <item>256</item>
+        <item>384</item>
+        <item>512</item>
+        <item>768</item>
+        <item>1024</item>
+        <item>1536</item>
+        <item>2048</item>
+        <item>4096</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -58,19 +58,18 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>5</item>    <!-- 0     -->
-        <item>12</item>   <!-- 5     -->
-        <item>21</item>   <!-- 15    -->
-        <item>32</item>   <!-- 50    -->
-        <item>42</item>   <!-- 100   -->
-        <item>49</item>   <!-- 200   -->
-        <item>58</item>   <!-- 400   -->
-        <item>68</item>   <!-- 1000  -->
-        <item>114</item>  <!-- 2000  -->
-        <item>158</item>  <!-- 3000  -->
-        <item>219</item>  <!-- 5000  -->
-        <item>249</item>  <!-- 10000 -->
-        <item>255</item>  <!-- 30000 -->
+        <item>64</item>
+        <item>128</item>
+        <item>170</item>
+        <item>220</item>
+        <item>256</item>
+        <item>384</item>
+        <item>512</item>
+        <item>768</item>
+        <item>1024</item>
+        <item>1536</item>
+        <item>2048</item>
+        <item>4096</item>
     </integer-array>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
