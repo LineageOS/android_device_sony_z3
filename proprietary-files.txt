@@ -1,34 +1,12 @@
-# Audio ACDB
-etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
-etc/acdbdata/Fluid/Fluid_General_cal.acdb
-etc/acdbdata/Fluid/Fluid_Global_cal.acdb
-etc/acdbdata/Fluid/Fluid_Handset_cal.acdb
-etc/acdbdata/Fluid/Fluid_Hdmi_cal.acdb
-etc/acdbdata/Fluid/Fluid_Headset_cal.acdb
-etc/acdbdata/Fluid/Fluid_Speaker_cal.acdb
-etc/acdbdata/Liquid/Liquid_Bluetooth_cal.acdb
-etc/acdbdata/Liquid/Liquid_General_cal.acdb
-etc/acdbdata/Liquid/Liquid_Global_cal.acdb
-etc/acdbdata/Liquid/Liquid_Handset_cal.acdb
-etc/acdbdata/Liquid/Liquid_Hdmi_cal.acdb
-etc/acdbdata/Liquid/Liquid_Headset_cal.acdb
-etc/acdbdata/Liquid/Liquid_Speaker_cal.acdb
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-etc/acdbdata/MTP/MTP_General_cal.acdb
-etc/acdbdata/MTP/MTP_Global_cal.acdb
-etc/acdbdata/MTP/MTP_Handset_cal.acdb
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/MTP_Headset_cal.acdb
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/Sony/Sony_Bluetooth_cal.acdb
-etc/acdbdata/Sony/Sony_General_cal.acdb
-etc/acdbdata/Sony/Sony_Global_cal.acdb
-etc/acdbdata/Sony/Sony_Handset_cal.acdb
-etc/acdbdata/Sony/Sony_Hdmi_cal.acdb
-etc/acdbdata/Sony/Sony_Headset_cal.acdb
-etc/acdbdata/Sony/Sony_Speaker_cal.acdb
+# Firmware  files
+etc/firmware/mba.b00
+etc/firmware/mba.mdt
+etc/firmware/tzhdcp.b00
+etc/firmware/tzhdcp.b01
+etc/firmware/tzhdcp.b02
+etc/firmware/tzhdcp.b03
+etc/firmware/tzhdcp.mdt
 
-# ADSP
 etc/firmware/adsp.b00
 etc/firmware/adsp.b01
 etc/firmware/adsp.b02
@@ -43,50 +21,22 @@ etc/firmware/adsp.b10
 etc/firmware/adsp.b11
 etc/firmware/adsp.b12
 etc/firmware/adsp.mdt
+etc/firmware/touch_module_id_0x74.img
+etc/firmware/touch_module_id_0x75.img
+etc/firmware/touch_module_id_0x76.img
+etc/firmware/touch_module_id_0x78.img
+etc/firmware/touch_module_id_0x7a.img
+etc/firmware/touch_module_id_0x7b.img
+etc/firmware/touch_module_id_0x7c.img
+etc/firmware/touch_module_id_0x7d.img
+etc/firmware/touch_module_id_0x7e.img
+etc/firmware/touch_module_id_0x7f.img
+etc/firmware/touch_module_id_0x80.img
+etc/firmware/touch_module_id_0x81.img
+etc/firmware/touch_module_id_0x95.img
+etc/firmware/touch_module_id_0x96.img
 
-# Bluetooth
-etc/firmware/BCM43xx.hcd
-
-# Camera
-etc/flashled_calc_parameters.cfg
-lib/libcald_hal.so
-lib/libcameralight.so
-vendor/camera/flash.dat
-vendor/camera/LGI02BN1_CACAO.dat
-vendor/camera/LGI02BN1.dat
-vendor/camera/LGI02BN1_IMX132.dat
-vendor/camera/product_CACAO.dat
-vendor/camera/product.dat
-vendor/camera/SEM02BN1_CACAO.dat
-vendor/camera/SEM02BN1.dat
-vendor/camera/SEM02BN1_IMX132.dat
-vendor/camera/SOI20BS0_BU64296GWX.dat
-vendor/camera/SOI20BS0_CACAO.dat
-vendor/camera/SOI20BS0.dat
-vendor/camera/SOI20BS0_IMX200.dat
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/liboemcamera.so
-
-# HDCP
-etc/firmware/tzhdcp.b00
-etc/firmware/tzhdcp.b01
-etc/firmware/tzhdcp.b02
-etc/firmware/tzhdcp.b03
-etc/firmware/tzhdcp.mdt
-
-# Misc
-bin/chargemon
-bin/updatemiscta
-
-# Modem
-bin/sct_service
-etc/firmware/mba.b00
-etc/firmware/mba.mdt
+# Device modem blobs
 etc/firmware/modem.b00
 etc/firmware/modem.b01
 etc/firmware/modem.b02
@@ -109,22 +59,46 @@ etc/firmware/modem.b24
 etc/firmware/modem.b25
 etc/firmware/modem.mdt
 
-# NFC
-etc/libnfc-nxp.conf
-etc/libnfc-brcm.conf
-vendor/firmware/libpn547_fw.so
-
-# Security
-bin/suntrold
-
-# Sensors
-bin/sensors.qcom
-vendor/lib/libsensor1.so
-etc/sensor_def_qcomdev.conf
+# IMX200-IMX132 Camera sensor blobs
+vendor/lib/libactuator_bu64296gwx.so
+vendor/lib/libactuator_bu64296gwx_camcorder.so
+vendor/lib/libactuator_bu64296gwx_camera.so
+vendor/lib/libchromatix_imx132_common.so
+vendor/lib/libchromatix_imx132_cpp_liveshot.so
+vendor/lib/libchromatix_imx132_cpp_preview.so
+vendor/lib/libchromatix_imx132_cpp_snapshot.so
+vendor/lib/libchromatix_imx132_cpp_video.so
+vendor/lib/libchromatix_imx132_default_video.so
+vendor/lib/libchromatix_imx132_liveshot.so
+vendor/lib/libchromatix_imx132_postproc.so
+vendor/lib/libchromatix_imx132_preview.so
+vendor/lib/libchromatix_imx132_snapshot.so
+vendor/lib/libchromatix_imx200_common.so
+vendor/lib/libchromatix_imx200_cpp_hfr_120.so
+vendor/lib/libchromatix_imx200_cpp_hfr_60.so
+vendor/lib/libchromatix_imx200_cpp_hfr_90.so
+vendor/lib/libchromatix_imx200_cpp_liveshot.so
+vendor/lib/libchromatix_imx200_cpp_preview.so
+vendor/lib/libchromatix_imx200_cpp_snapshot.so
+vendor/lib/libchromatix_imx200_cpp_snapshot_hdr.so
+vendor/lib/libchromatix_imx200_cpp_video.so
+vendor/lib/libchromatix_imx200_cpp_video_4k.so
+vendor/lib/libchromatix_imx200_cpp_video_hdr.so
+vendor/lib/libchromatix_imx200_default_video.so
+vendor/lib/libchromatix_imx200_hfr_120.so
+vendor/lib/libchromatix_imx200_hfr_60.so
+vendor/lib/libchromatix_imx200_hfr_90.so
+vendor/lib/libchromatix_imx200_liveshot.so
+vendor/lib/libchromatix_imx200_postproc.so
+vendor/lib/libchromatix_imx200_preview.so
+vendor/lib/libchromatix_imx200_snapshot.so
+vendor/lib/libchromatix_imx200_snapshot_hdr.so
+vendor/lib/libchromatix_imx200_video_4k.so
+vendor/lib/libchromatix_imx200_video_hdr.so
+vendor/lib/libmmcamera_imx132.so
+vendor/lib/libmmcamera_imx200.so
 
 # TFA98XX DSP
-etc/sforce/sforce_coef_music.bin
-etc/sforce/sforce_coef_video.bin
 etc/tfa98xx/btm.speaker
 etc/tfa98xx/coldboot.patch
 etc/tfa98xx/FMSpeaker_btm.eq
@@ -155,25 +129,5 @@ etc/tfa98xx/VoiceCallSpeaker_btm.preset
 etc/tfa98xx/VoiceCallSpeaker_top.eq
 etc/tfa98xx/VoiceCallSpeaker_top.preset
 
-# TouchScreen
-etc/firmware/touch_module_id_0x74.img
-etc/firmware/touch_module_id_0x75.img
-etc/firmware/touch_module_id_0x76.img
-etc/firmware/touch_module_id_0x78.img
-etc/firmware/touch_module_id_0x7a.img
-etc/firmware/touch_module_id_0x7b.img
-etc/firmware/touch_module_id_0x7c.img
-etc/firmware/touch_module_id_0x7d.img
-etc/firmware/touch_module_id_0x7e.img
-etc/firmware/touch_module_id_0x7f.img
-etc/firmware/touch_module_id_0x80.img
-etc/firmware/touch_module_id_0x81.img
-etc/firmware/touch_module_id_0x95.img
-etc/firmware/touch_module_id_0x96.img
-etc/touch_fw_update.sh
+# Touchscreen
 usr/idc/clearpad.idc
-
-# WiFi firmware
-etc/firmware/wlan/bcmdhd/bcmdhd.cal
-etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin
-etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin
