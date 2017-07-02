@@ -1,4 +1,4 @@
-# Audio ACDB
+# ACDB 
 etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
 etc/acdbdata/Fluid/Fluid_General_cal.acdb
 etc/acdbdata/Fluid/Fluid_Global_cal.acdb
@@ -28,7 +28,94 @@ etc/acdbdata/Sony/Sony_Hdmi_cal.acdb
 etc/acdbdata/Sony/Sony_Headset_cal.acdb
 etc/acdbdata/Sony/Sony_Speaker_cal.acdb
 
-# ADSP
+# Bluetooth
+etc/firmware/BCM43xx.hcd
+
+# Camera
+vendor/camera/LGI02BN1/cam_ctrl.dat
+vendor/camera/LGI02BN1/cap_ctrl.dat
+vendor/camera/LGI02BN1/chokoball.dat
+vendor/camera/LGI02BN1/color_ctrl.dat
+vendor/camera/LGI02BN1/dataflow.dat
+vendor/camera/LGI02BN1/debug_mgr.dat
+vendor/camera/LGI02BN1/exposure_ctrl.dat
+vendor/camera/LGI02BN1/face_detector.dat
+vendor/camera/LGI02BN1/flicker_detector.dat
+vendor/camera/LGI02BN1/focus_stats_conv.dat
+vendor/camera/LGI02BN1/hal_ctrl.dat
+vendor/camera/LGI02BN1/hal_ctrl_platform.dat
+vendor/camera/LGI02BN1/hdr_comp.dat
+vendor/camera/LGI02BN1/idt_ctrl.dat
+vendor/camera/LGI02BN1/image_conv.dat
+vendor/camera/LGI02BN1/imgproc.dat
+vendor/camera/LGI02BN1_IMX132.dat
+vendor/camera/LGI02BN1/jpeg_enc.dat
+vendor/camera/LGI02BN1/lens_ctrl.dat
+vendor/camera/LGI02BN1/module.dat
+vendor/camera/LGI02BN1/motion_estimation.dat
+vendor/camera/LGI02BN1/multiframe_nr.dat
+vendor/camera/LGI02BN1/object_tracker.dat
+vendor/camera/LGI02BN1/scene_detector.dat
+vendor/camera/LGI02BN1/snapshot_ctrl.dat
+vendor/camera/LGI02BN1/streaming_ctrl.dat
+vendor/camera/product_CACAO.dat
+vendor/camera/product.dat
+vendor/camera/SEM02BN1/cam_ctrl.dat
+vendor/camera/SEM02BN1/cap_ctrl.dat
+vendor/camera/SEM02BN1/chokoball.dat
+vendor/camera/SEM02BN1/color_ctrl.dat
+vendor/camera/SEM02BN1/dataflow.dat
+vendor/camera/SEM02BN1/debug_mgr.dat
+vendor/camera/SEM02BN1/exposure_ctrl.dat
+vendor/camera/SEM02BN1/face_detector.dat
+vendor/camera/SEM02BN1/flicker_detector.dat
+vendor/camera/SEM02BN1/focus_stats_conv.dat
+vendor/camera/SEM02BN1/hal_ctrl.dat
+vendor/camera/SEM02BN1/hal_ctrl_platform.dat
+vendor/camera/SEM02BN1/hdr_comp.dat
+vendor/camera/SEM02BN1/idt_ctrl.dat
+vendor/camera/SEM02BN1/image_conv.dat
+vendor/camera/SEM02BN1/imgproc.dat
+vendor/camera/SEM02BN1_IMX132.dat
+vendor/camera/SEM02BN1/jpeg_enc.dat
+vendor/camera/SEM02BN1/lens_ctrl.dat
+vendor/camera/SEM02BN1/module.dat
+vendor/camera/SEM02BN1/motion_estimation.dat
+vendor/camera/SEM02BN1/multiframe_nr.dat
+vendor/camera/SEM02BN1/object_tracker.dat
+vendor/camera/SEM02BN1/scene_detector.dat
+vendor/camera/SEM02BN1/snapshot_ctrl.dat
+vendor/camera/SEM02BN1/streaming_ctrl.dat
+vendor/camera/SOI20BS1_BU64296GWX.dat
+vendor/camera/SOI20BS1/cam_ctrl.dat
+vendor/camera/SOI20BS1/cap_ctrl.dat
+vendor/camera/SOI20BS1/chokoball.dat
+vendor/camera/SOI20BS1/color_ctrl.dat
+vendor/camera/SOI20BS1/dataflow.dat
+vendor/camera/SOI20BS1/debug_mgr.dat
+vendor/camera/SOI20BS1/exposure_ctrl.dat
+vendor/camera/SOI20BS1/face_detector.dat
+vendor/camera/SOI20BS1/flicker_detector.dat
+vendor/camera/SOI20BS1/focus_stats_conv.dat
+vendor/camera/SOI20BS1/hal_ctrl.dat
+vendor/camera/SOI20BS1/hal_ctrl_platform.dat
+vendor/camera/SOI20BS1/hdr_comp.dat
+vendor/camera/SOI20BS1/idt_ctrl.dat
+vendor/camera/SOI20BS1/image_conv.dat
+vendor/camera/SOI20BS1/imgproc.dat
+vendor/camera/SOI20BS1_IMX200.dat
+vendor/camera/SOI20BS1/jpeg_enc.dat
+vendor/camera/SOI20BS1/lens_ctrl.dat
+vendor/camera/SOI20BS1/module.dat
+vendor/camera/SOI20BS1/motion_estimation.dat
+vendor/camera/SOI20BS1/multiframe_nr.dat
+vendor/camera/SOI20BS1/object_tracker.dat
+vendor/camera/SOI20BS1/scene_detector.dat
+vendor/camera/SOI20BS1/snapshot_ctrl.dat
+vendor/camera/SOI20BS1/streaming_ctrl.dat
+
+
+# Firmware
 etc/firmware/adsp.b00
 etc/firmware/adsp.b01
 etc/firmware/adsp.b02
@@ -43,48 +130,14 @@ etc/firmware/adsp.b10
 etc/firmware/adsp.b11
 etc/firmware/adsp.b12
 etc/firmware/adsp.mdt
-
-# Bluetooth
-etc/firmware/BCM43xx.hcd
-
-# Camera
-etc/flashled_calc_parameters.cfg
-lib/libcald_hal.so
-lib/libcameralight.so
-vendor/camera/flash.dat
-vendor/camera/LGI02BN1_CACAO.dat
-vendor/camera/LGI02BN1.dat
-vendor/camera/LGI02BN1_IMX132.dat
-vendor/camera/product_CACAO.dat
-vendor/camera/product.dat
-vendor/camera/SEM02BN1_CACAO.dat
-vendor/camera/SEM02BN1.dat
-vendor/camera/SEM02BN1_IMX132.dat
-vendor/camera/SOI20BS0_BU64296GWX.dat
-vendor/camera/SOI20BS0_CACAO.dat
-vendor/camera/SOI20BS0.dat
-vendor/camera/SOI20BS0_IMX200.dat
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/liboemcamera.so
-
-# HDCP
 etc/firmware/tzhdcp.b00
 etc/firmware/tzhdcp.b01
 etc/firmware/tzhdcp.b02
 etc/firmware/tzhdcp.b03
+etc/firmware/tzhdcp.flist
 etc/firmware/tzhdcp.mdt
 
-# Misc
-bin/chargemon
-bin/updatemiscta
-
 # Modem
-bin/sct_service
 etc/firmware/mba.b00
 etc/firmware/mba.mdt
 etc/firmware/modem.b00
@@ -109,22 +162,7 @@ etc/firmware/modem.b24
 etc/firmware/modem.b25
 etc/firmware/modem.mdt
 
-# NFC
-etc/libnfc-nxp.conf
-etc/libnfc-brcm.conf
-vendor/firmware/libpn547_fw.so
-
-# Security
-bin/suntrold
-
-# Sensors
-bin/sensors.qcom
-vendor/lib/libsensor1.so
-etc/sensor_def_qcomdev.conf
-
-# TFA98XX DSP
-etc/sforce/sforce_coef_music.bin
-etc/sforce/sforce_coef_video.bin
+# TFA98xx amplifier
 etc/tfa98xx/btm.speaker
 etc/tfa98xx/coldboot.patch
 etc/tfa98xx/FMSpeaker_btm.eq
@@ -155,25 +193,5 @@ etc/tfa98xx/VoiceCallSpeaker_btm.preset
 etc/tfa98xx/VoiceCallSpeaker_top.eq
 etc/tfa98xx/VoiceCallSpeaker_top.preset
 
-# TouchScreen
-etc/firmware/touch_module_id_0x74.img
-etc/firmware/touch_module_id_0x75.img
-etc/firmware/touch_module_id_0x76.img
-etc/firmware/touch_module_id_0x78.img
-etc/firmware/touch_module_id_0x7a.img
-etc/firmware/touch_module_id_0x7b.img
-etc/firmware/touch_module_id_0x7c.img
-etc/firmware/touch_module_id_0x7d.img
-etc/firmware/touch_module_id_0x7e.img
-etc/firmware/touch_module_id_0x7f.img
-etc/firmware/touch_module_id_0x80.img
-etc/firmware/touch_module_id_0x81.img
-etc/firmware/touch_module_id_0x95.img
-etc/firmware/touch_module_id_0x96.img
-etc/touch_fw_update.sh
+# Touchscreen
 usr/idc/clearpad.idc
-
-# WiFi firmware
-etc/firmware/wlan/bcmdhd/bcmdhd.cal
-etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin
-etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin
