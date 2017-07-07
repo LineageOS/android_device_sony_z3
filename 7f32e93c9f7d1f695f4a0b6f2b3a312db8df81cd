@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da87b5cf_6d619738",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 10
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-07-07T06:42:03Z",
+      "side": 1,
+      "message": "Unneeded",
+      "revId": "7f32e93c9f7d1f695f4a0b6f2b3a312db8df81cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da87b5cf_8d641b4a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 10
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-07-07T06:42:03Z",
+      "side": 1,
+      "message": "Just FYI, these aren\u0027t all used, but it\u0027s fine if they stay.",
+      "revId": "7f32e93c9f7d1f695f4a0b6f2b3a312db8df81cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
