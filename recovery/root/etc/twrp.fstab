@@ -1,0 +1,15 @@
+# mount point   fstype  device
+#/sdcard    vfat    /dev/block/sda1
+
+/system         ext4    /dev/block/platform/msm_sdcc.1/by-name/system
+#/system        f2fs    /dev/block/platform/msm_sdcc.1/by-name/system
+/cache          ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
+#/cache         f2fs    /dev/block/platform/msm_sdcc.1/by-name/cache
+#/data           ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata     length=-16384
+/data          f2fs    /dev/block/platform/msm_sdcc.1/by-name/userdata     length=-16384
+/boot           emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery       emmc    /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel   flags=display="Recovery";backup=1
+/TA             emmc    /dev/block/platform/msm_sdcc.1/by-name/TA           flags=display="!Trim Area!";backup=1
+/external_sd    ext4    /dev/block/mmcblk1p1                                flags=display="Micro SDcard";storage;removable
+/usb-otg        auto    /dev/block/sda1                                     flags=display="USB OTG";storage;wipeingui;removable
+/misc           emmc    /dev/block/platform/msm_sdcc.1/by-name/apps_log
