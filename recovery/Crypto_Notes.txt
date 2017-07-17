@@ -1,0 +1,37 @@
+For working crypto on z3 (D6603) we need: 
+1. some blobs: 
+  /etc/firmware/cmnlib.b03
+  /etc/firmware/cmnlib.mdt
+  /etc/firmware/cmnlib.b00
+  /etc/firmware/cmnlib.b01
+  /etc/firmware/cmnlib.b02
+  /vendor/firmware/keymaster/keymaster.b00
+  /vendor/firmware/keymaster/keymaster.b01
+  /vendor/firmware/keymaster/keymaster.b02
+  /vendor/firmware/keymaster/keymaster.b03
+  /vendor/firmware/keymaster/keymaster.mdt
+  /vendor/lib/libQSEEComAPI.so
+  /bin/qseecomd
+  /lib/lib_asb_tee.so
+  /lib/libkeyctrl.so
+  /lib/libidd.so
+  /vendor/lib/libdrmtime.so
+  /vendor/lib/libdrmfs.so
+  /vendor/lib/libdrmdiag.so
+
+2. the keystore package: 
+  TARGET_RECOVERY_DEVICE_MODULES += \
+     keystore \
+     keystore.default \
+     keystore.$(TARGET_BOARD_PLATFORM)
+
+3. the keystore package need to be installed in the recovery ramdisk
+
+4. the firmware blobs doesn't work if out of /system folder
+
+5. adding symlinks /system/etc --> /etc , /system/bin --> /bin , etc... solve the problem and doesn't prevent the real /system partition to be mounted when recovery is started. 
+
+6. when the recovery is started, /system/bin/qseecomd had to be started. Twrp source code (2.8.7.0 on 2016/01/18) start it without code modifications. 
+
+
+99. note ONLY the tecovery files in the device (NOT the board) tree (eg: sony/z3/recovery) are copied to the recovery ramdisk (sony/shinano-common/recovery/root are NOT copied) ! --> thks to Dees-Troy
