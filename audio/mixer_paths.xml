@@ -71,7 +71,6 @@
     <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="0" />
     <ctl name="Voice_Tx Mixer SEC_AUX_PCM_TX_Voice" value="0" />
     <ctl name="VOC_EXT_EC MUX" value="NONE" />
-    <ctl name="AUDIO_EXT_EC MUX" value="NONE" />
     <!-- Audio BTSCO -->
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia4" value="0" />
@@ -1217,6 +1216,10 @@
         <ctl name="MultiMedia2 Mixer SLIM_0_TX" value="1" />
     </path>
 
+    <path name="low-latency-record">
+        <ctl name="MultiMedia5 Mixer SLIM_0_TX" value="1" />
+    </path>
+
     <path name="voice-call">
         <ctl name="SLIM_0_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
@@ -1233,6 +1236,7 @@
 
     <path name="voice-call speaker">
         <path name="voice-call handset" />
+        <path name="voice-external-echo" />
     </path>
 
     <path name="voice-call hdmi">
@@ -1517,6 +1521,7 @@
 
     <path name="volte-call speaker">
         <path name="volte-call handset" />
+        <path name="voice-external-echo" />
     </path>
 
     <path name="volte-call hdmi">
@@ -1563,7 +1568,7 @@
     </path>
 
     <path name="vowlan-call bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="rate_16000" />
+        <ctl name="Internal BTSCO SampleRate" value="16000" />
         <path name="vowlan-call bt-sco" />
     </path>
 
@@ -1579,6 +1584,7 @@
 
     <path name="vowlan-call speaker">
         <path name="vowlan-call handset" />
+        <path name="voice-external-echo" />
     </path>
 
     <path name="vowlan-call speaker-and-headphones">
@@ -1619,6 +1625,7 @@
 
     <path name="compress-voip-call speaker">
         <path name="compress-voip-call handset" />
+        <path name="voice-external-echo" />
     </path>
 
     <path name="compress-voip-call speaker-and-headphones">
@@ -1650,6 +1657,7 @@
 
     <path name="qchat-call speaker">
         <path name="qchat-call handset" />
+        <path name="voice-external-echo" />
     </path>
 
     <path name="qchat-call bt-sco">
