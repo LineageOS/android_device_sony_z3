@@ -41,9 +41,8 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.z3
 
-# Dalvik/HWUI
+# Dalvik
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # Audio configs
 PRODUCT_COPY_FILES += \
