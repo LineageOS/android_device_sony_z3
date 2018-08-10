@@ -29,9 +29,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-
 # Hardware-specific permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml \
