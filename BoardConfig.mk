@@ -1,4 +1,5 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
+#           (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +21,9 @@ DEVICE_PATH := device/sony/z3
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6643,D6653,z3,leo
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
