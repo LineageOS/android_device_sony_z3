@@ -13,17 +13,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the shinano-common definitions
+# inherit from the shinano-common
 include device/sony/shinano-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/sony/z3
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6643,D6653,z3,leo
-TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
+TARGET_OTA_ASSERT_DEVICE := z3
+
+# Device-specific properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
+# Include path
+TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
@@ -32,11 +37,11 @@ TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 BOARD_VOLD_MAX_PARTITIONS := 25
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# Device specific prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+# Inherit from proprietary files
+include vendor/sony/z3/BoardConfigVendor.mk
