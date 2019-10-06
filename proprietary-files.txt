@@ -102,9 +102,6 @@ vendor/camera/SEM02BN1/object_tracker.dat
 vendor/camera/SEM02BN1/scene_detector.dat
 vendor/camera/SEM02BN1/snapshot_ctrl.dat
 vendor/camera/SEM02BN1/streaming_ctrl.dat
-vendor/camera/SOI20BS0_BU64296GWX.dat
-vendor/camera/SOI20BS0_IMX200.dat
-vendor/camera/SOI20BS1_BU64296GWX.dat
 vendor/camera/SOI20BS1/cam_ctrl.dat
 vendor/camera/SOI20BS1/cap_ctrl.dat
 vendor/camera/SOI20BS1/chokoball.dat
