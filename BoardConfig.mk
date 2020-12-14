@@ -23,9 +23,6 @@ DEVICE_PATH := device/sony/z3
 # Assert
 TARGET_OTA_ASSERT_DEVICE := z3
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
