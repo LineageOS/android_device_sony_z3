@@ -63,5 +63,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/firmware/bcmdhd.cal
 
-# Call the proprietary setup
-$(call inherit-product, vendor/sony/z3/z3-vendor.mk)
+# This makefile may be called for z3dual, so call the proprietary setup only if target is the z3
+ifeq ($(TARGET_PRODUCT),lineage_z3)
+  $(call inherit-product, vendor/sony/z3/z3-vendor.mk)
+endif
